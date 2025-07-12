@@ -6,11 +6,17 @@ export function Footer() {
     const currentYear = new Date().getFullYear();
 
     return (
-        <footer className="bg-brand-green text-white">
-            <div className="container mx-auto px-4 py-12">
+        <footer className="bg-[#014424] text-white w-full">
+            <div className="px-4 py-12 max-w-screen-xl mx-auto">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
                     <div>
-                        <Image src="/logo.jpg" alt="Drogaria Revita Logo" width={180} height={45} className="mx-auto md:mx-0 filter invert brightness-0" />
+                        <Image
+                            src="/logo.jpg"
+                            alt="Drogaria Revita Logo"
+                            width={180}
+                            height={45}
+                        // className="mx-auto md:mx-0 filter invert brightness-0"
+                        />
                         <p className="mt-4 text-sm text-gray-300">CNPJ: 53.412.477/0001-40</p>
                     </div>
                     <div>

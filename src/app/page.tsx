@@ -14,6 +14,9 @@ export default function Home() {
       <ServicesSection />
       <AboutSection />
       <LocationSection />
+      <div className="bg-brand-green text-white p-4">
+        Teste de bg-brand-green
+      </div>
       <Footer />
     </main>
   );

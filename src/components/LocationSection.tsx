@@ -27,28 +27,28 @@ export function LocationSection() {
                     </div>
                     <div className="space-y-6">
                         <div className="flex items-start gap-4">
-                            <MapPin className="h-6 w-6 text-brand-green mt-1" />
+                            <MapPin className="h-6 w-6 text-[#014424] mt-1" />
                             <div>
                                 <h3 className="font-semibold text-lg">Endereço</h3>
                                 <p className="text-gray-600">Avenida Principal, 84, Jardim América, São Luís - MA, 65058-284</p>
                             </div>
                         </div>
                         <div className="flex items-start gap-4">
-                            <Clock className="h-6 w-6 text-brand-green mt-1" />
+                            <Clock className="h-6 w-6 text-[#014424] mt-1" />
                             <div>
                                 <h3 className="font-semibold text-lg">Horário de Funcionamento</h3>
                                 <p className="text-gray-600">Todos os dias, incluindo feriados, das 7h às 22h.</p>
                             </div>
                         </div>
                         <div className="flex items-start gap-4">
-                            <Phone className="h-6 w-6 text-brand-green mt-1" />
+                            <Phone className="h-6 w-6 text-[#014424] mt-1" />
                             <div>
                                 <h3 className="font-semibold text-lg">Contato</h3>
                                 <p className="text-gray-600">Fone/Whatsapp: (98) 98587-7631</p>
                             </div>
                         </div>
                         <a href={googleMapsUrl} target="_blank" rel="noopener noreferrer">
-                            <Button size="lg" className="w-full bg-brand-green hover:bg-brand-green/90">
+                            <Button size="lg" className="w-full bg-[#014424] hover:bg-[#014424]/90">
                                 Ver Rota no Google Maps
                             </Button>
                         </a>
