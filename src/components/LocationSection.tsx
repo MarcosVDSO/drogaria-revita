@@ -3,7 +3,7 @@ import { Button } from './ui/button';
 import { MapPin, Clock, Phone } from 'lucide-react';
 
 export function LocationSection() {
-    const googleMapsUrl = "https://www.google.com/maps/search/?api=1&query=Avenida+principal,+84,+jardim+América,+São+Luís+-MA,+65058-284";
+    const googleMapsUrl = "https://www.google.com/maps/place/Drogaria+Revita+%7C+Delivery+%7C+Farm%C3%A1cia+em+S%C3%A3o+Luiz/@-2.5844364,-44.1993205,17z/data=!3m1!4b1!4m6!3m5!1s0x7f69b000717b7c9:0x1c02cab4883d2e5b!8m2!3d-2.5844418!4d-44.1967456!16s%2Fg%2F11v_5r4nj8?entry=ttu&g_ep=EgoyMDI1MDcwOS4wIKXMDSoASAFQAw%3D%3D";
 
     return (
         <section id="localizacao" className="py-20 bg-gray-50">
@@ -15,7 +15,7 @@ export function LocationSection() {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                     <div>
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3985.434608750805!2d-44.2255850852438!3d-2.580195998188151!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7f695a452d3a37b%3A0xe8d0774a387532d8!2sAv.%20Principal%2C%2084%20-%20Jardim%20Am%C3%A9rica%2C%20S%C3%A3o%20Lu%C3%ADs%20-%20MA%2C%2065058-284!5e0!3m2!1spt-BR!2sbr!4v1672856407519!5m2!1spt-BR!2sbr"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4904.353244506261!2d-44.201616515383876!3d-2.5844364316855564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7f69b000717b7c9%3A0x1c02cab4883d2e5b!2sDrogaria%20Revita%20%7C%20Delivery%20%7C%20Farm%C3%A1cia%20em%20S%C3%A3o%20Luiz!5e1!3m2!1spt-BR!2sbr!4v1752356290027!5m2!1spt-BR!2sbr"
                             width="100%"
                             height="450"
                             style={{ border: 0 }}

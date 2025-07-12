@@ -34,6 +34,7 @@ export function Footer() {
                 </div>
                 <div className="border-t border-gray-600 mt-8 pt-6 text-center text-xs text-gray-400">
                     <p>Farmacêutico Responsável: Danilo Pinheiro Aroucha, CRF/MA: 9190</p>
+                    <p>AFE: 5.08951-8 CMVS: 001241/2024</p>
                     <p className="mt-2">&copy; {currentYear} Drogaria Revita. Todos os direitos reservados.</p>
                 </div>
             </div>

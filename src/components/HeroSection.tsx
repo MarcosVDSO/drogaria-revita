@@ -74,7 +74,7 @@ export function HeroSection() {
                     Drogaria Revita: <br /> <span className="text-green-300">Confiança e economia</span> para sua saúde.
                 </h1>
                 <p className="mt-4 max-w-2xl text-lg text-gray-200 drop-shadow-md">
-                    O melhor atendimento da região com uma grande variedade de medicamentos e produtos com preços imperdíveis.
+                    Entre em contato agora mesmo pelo nosso telefone ou por mensagem. Faça o seu orçamento ou o seu pedido e receba no conforto do seu lar. As melhores ofertas estão aqui para você!
                 </p>
                 <div className="mt-8 flex flex-col sm:flex-row gap-4">
                     <a href={googleMapsUrl} target="_blank" rel="noopener noreferrer">
