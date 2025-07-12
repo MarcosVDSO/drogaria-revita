@@ -15,7 +15,7 @@ const backgroundImages = [
 ];
 
 export function HeroSection() {
-    const googleMapsUrl = "https://maps.app.goo.gl/ex61g3vT5sB3gL8w8";
+    const googleMapsUrl = "https://www.google.com/maps/place/Drogaria+Revita+%7C+Delivery+%7C+Farm%C3%A1cia+em+S%C3%A3o+Luiz/@-2.5844364,-44.1993205,17z/data=!3m1!4b1!4m6!3m5!1s0x7f69b000717b7c9:0x1c02cab4883d2e5b!8m2!3d-2.5844418!4d-44.1967456!16s%2Fg%2F11v_5r4nj8?entry=ttu&g_ep=EgoyMDI1MDcwOS4wIKXMDSoASAFQAw%3D%3D";
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
     // Armazena o índice da imagem anterior para mantê-la visível durante a transição
