@@ -8,8 +8,8 @@ import { MapPin } from 'lucide-react';
 
 // Array com as URLs das imagens para o carrossel
 const backgroundImages = [
-    'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    'https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    '/foto-remedios.jpeg',
+    '/foto-maos.jpeg',
     '/imagem-revita.jpg',
 ];
 
