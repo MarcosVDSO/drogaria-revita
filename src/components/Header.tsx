@@ -12,12 +12,13 @@ export function Header() {
                     <Image src="/logo.jpg" alt="Drogaria Revita Logo" width={150} height={50} priority />
                 </Link>
                 <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
-                    <Link href="#servicos" className="text-gray-200 hover:text-gray-400 transition-colors">Serviços</Link>
-                    <Link href="#sobre" className="text-gray-200 hover:text-gray-400 transition-colors">Sobre Nós</Link>
-                    <Link href="#localizacao" className="text-gray-200 hover:text-gray-400 transition-colors">Localização</Link>
+                    <Link href="#servicos" className="text-gray-200 hover:text-white hover:underline underline-offset-4 transition-all">Serviços</Link>
+                    <Link href="#sobre" className="text-gray-200 hover:text-white hover:underline underline-offset-4 transition-all">Sobre Nós</Link>
+                    <Link href="#localizacao" className="text-gray-200 hover:text-white hover:underline underline-offset-4 transition-all">Localização</Link>
+
                 </nav>
                 <a href="https://www.ifood.com.br/delivery/sao-luis-ma/drogaria-revita-jardim-america/65ef62c4-edd1-4b50-a0e6-a5ebb1236d49?utm_medium=share" target="_blank" rel="noopener noreferrer">
-                    <Button className="bg-[#D92D20] hover:bg-[#D92D20]/90">
+                    <Button className="bg-[#D92D20] hover:bg-[#D92D20]/90 cursor-pointer">
                         <Pill className="mr-2 h-4 w-4" />
                         Peça pelo Ifood
                     </Button>

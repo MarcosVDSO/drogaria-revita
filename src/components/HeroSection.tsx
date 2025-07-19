@@ -10,8 +10,7 @@ import { MapPin } from 'lucide-react';
 const backgroundImages = [
     'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     'https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    'https://images.unsplash.com/photo-1620510493432-57419814a533?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    'https://images.unsplash.com/photo-1550831107-1553da8c8464?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+    '/imagem-revita.jpg',
 ];
 
 export function HeroSection() {
@@ -78,16 +77,21 @@ export function HeroSection() {
                 </p>
                 <div className="mt-8 flex flex-col sm:flex-row gap-4">
                     <a href={googleMapsUrl} target="_blank" rel="noopener noreferrer">
-                        <Button size="lg" className="bg-[#014424] hover:bg-[#014424]/90 text-white w-full sm:w-auto">
+                        <Button size="lg" className="bg-[#014424] hover:bg-[#014424]/90 text-white w-full sm:w-auto cursor-pointer transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-md">
                             <MapPin className="mr-0 h-5 w-5" />
                             Ver Rota no Mapa
                         </Button>
                     </a>
                     <a href="https://wa.me/5598985877631" target="_blank" rel="noopener noreferrer">
-                        <Button size="lg" variant="outline" className="text-black border-white hover:bg-white hover:text-black w-full sm:w-auto">
+                        <Button
+                            size="lg"
+                            variant="outline"
+                            className="text-black border-white hover:bg-white hover:text-black w-full sm:w-auto cursor-pointer transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-md"
+                        >
                             <img src="/icone-whats.png" alt="Ícone do WhatsApp" className="h-6 w-6 mr-0" />
                             WhatsApp
                         </Button>
+
                     </a>
                 </div>
             </div>

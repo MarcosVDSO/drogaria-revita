@@ -20,7 +20,7 @@ export function AboutSection() {
                         alt="Fachada da Drogaria Revita"
                         width={600}
                         height={400}
-                        className="rounded-lg shadow-xl"
+                        className="rounded-lg shadow-xl transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-md"
                     />
                 </div>
             </div>

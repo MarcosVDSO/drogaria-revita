@@ -22,7 +22,7 @@ export function LocationSection() {
                             allowFullScreen={false}
                             loading="lazy"
                             referrerPolicy="no-referrer-when-downgrade"
-                            className="rounded-lg shadow-md"
+                            className="rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-md"
                         ></iframe>
                     </div>
                     <div className="space-y-6">
@@ -48,7 +48,7 @@ export function LocationSection() {
                             </div>
                         </div>
                         <a href={googleMapsUrl} target="_blank" rel="noopener noreferrer">
-                            <Button size="lg" className="w-full bg-[#014424] hover:bg-[#014424]/90">
+                            <Button size="lg" className="w-full bg-[#014424] hover:bg-[#014424]/90 cursor-pointer transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-md">
                                 Ver Rota no Google Maps
                             </Button>
                         </a>
