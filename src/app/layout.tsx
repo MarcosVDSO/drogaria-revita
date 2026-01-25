@@ -23,8 +23,8 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <Head>
-        {/* Google Tag Manager */}
-        <Script id="gtm-script" strategy="afterInteractive">
+
+        {/* <Script id="gtm-script" strategy="afterInteractive">
           {`
             (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
             new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -32,8 +32,19 @@ export default function RootLayout({
             'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
             })(window,document,'script','dataLayer','GTM-K2QGCGLZ');
           `}
+        </Script> */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=AW-17782873839"
+          strategy="afterInteractive"
+        />
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-17782873839');
+          `}
         </Script>
-        {/* End Google Tag Manager */}
         <link rel="icon" href="/icone.jpg" />
       </Head>
 
