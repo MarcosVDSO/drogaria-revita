@@ -1,4 +1,4 @@
-// src/components/LocationSection.tsx
+
 import { Button } from './ui/button';
 import { MapPin, Clock, Phone } from 'lucide-react';
 

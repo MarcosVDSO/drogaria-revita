@@ -1,12 +1,12 @@
-"use client"; // Marca este como um Componente de Cliente
+"use client";
 
-// src/components/HeroSection.tsx
+
 import React, { useState, useEffect } from 'react';
 import { Button } from './ui/button';
 import Link from 'next/link';
 import { MapPin } from 'lucide-react';
 
-// Array com as URLs das imagens para o carrossel
+
 const backgroundImages = [
     '/foto-remedios.jpeg',
     '/foto-maos.jpeg',
@@ -17,10 +17,10 @@ export function HeroSection() {
     const googleMapsUrl = "https://www.google.com/maps/place/Drogaria+Revita+%7C+Delivery+%7C+Farm%C3%A1cia+em+S%C3%A3o+Luiz/@-2.5844364,-44.1993205,17z/data=!3m1!4b1!4m6!3m5!1s0x7f69b000717b7c9:0x1c02cab4883d2e5b!8m2!3d-2.5844418!4d-44.1967456!16s%2Fg%2F11v_5r4nj8?entry=ttu&g_ep=EgoyMDI1MDcwOS4wIKXMDSoASAFQAw%3D%3D";
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-    // Armazena o índice da imagem anterior para mantê-la visível durante a transição
+
     const [previousImageIndex, setPreviousImageIndex] = useState(backgroundImages.length - 1);
 
-    // Efeito para pré-carregar as imagens
+
     useEffect(() => {
         backgroundImages.forEach((imageUrl) => {
             const img = new Image();
@@ -28,46 +28,44 @@ export function HeroSection() {
         });
     }, []);
 
-    // Efeito para trocar a imagem a cada 5 segundos
+
     useEffect(() => {
         const timer = setInterval(() => {
-            // A imagem atual se tornará a anterior na próxima renderização
+
             setPreviousImageIndex(currentImageIndex);
 
             setCurrentImageIndex((prevIndex) =>
                 (prevIndex + 1) % backgroundImages.length
             );
-        }, 5000); // Muda a cada 5 segundos
+        }, 5000);
 
-        // Limpa o timer quando o componente é desmontado
+
         return () => clearInterval(timer);
-    }, [currentImageIndex]); // Depende do índice atual para o ciclo continuar
+    }, [currentImageIndex]);
 
     return (
         <section id="home" className="relative h-screen w-full flex items-center justify-center overflow-hidden">
-            {/* Contêiner do Carrossel de Imagens de Fundo */}
+
             {backgroundImages.map((imageUrl, index) => (
                 <div
                     key={index}
                     className={`absolute top-0 left-0 w-full h-full bg-cover bg-center 
-                        ${
-                        // A imagem ATUAL tem transição de opacidade, fica visível e na frente (z-10)
-                        index === currentImageIndex
+                        ${index === currentImageIndex
                             ? 'opacity-100 z-10 transition-opacity duration-1000 ease-in-out'
-                            // A imagem ANTERIOR fica visível, mas atrás (z-0), servindo de fundo sólido
+
                             : index === previousImageIndex
                                 ? 'opacity-100 z-0'
-                                // Todas as outras ficam invisíveis
+
                                 : 'opacity-0'
                         }`}
                     style={{ backgroundImage: `url(${imageUrl})` }}
                 />
             ))}
 
-            {/* Overlay para melhorar a legibilidade do texto (agora com z-20 para ficar acima das imagens) */}
+
             <div className="absolute top-0 left-0 w-full h-full bg-black/50 z-20"></div>
 
-            {/* Conteúdo da Hero Section (com z-30 para ficar acima do overlay) */}
+
             <div className="relative z-30 container mx-auto text-center flex flex-col items-center px-4">
                 <h1 className="text-4xl md:text-6xl font-extrabold text-white leading-tight drop-shadow-lg">
                     Drogaria Revita: <br /> <span className="text-green-300">Confiança e economia</span> para sua saúde.
